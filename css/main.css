@@ -271,12 +271,16 @@ button.cg-btn:focus, input[type="submit"].cg-btn:focus, input[type="button"].cg-
 }
 
 .cg-table > table > thead > tr > th:first-child {
-  width: 10%;
+  width: 8%;
   text-align: center;
 }
 
 .cg-table > table > tbody > tr {
   border-bottom: 1px solid var(--cl-lighter-gray);
+}
+
+.cg-table > table > tbody > tr > *:first-child {
+  text-align: center;
 }
 
 .cg-table > table > tbody > tr > th, .cg-table > table > tbody > tr > td {
