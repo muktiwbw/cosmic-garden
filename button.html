@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Cosmic Garden CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+
+  <title>Cosmic Garden - Table</title>
+</head>
+<body>
+  <section 
+    class="section-table"
+    style="
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    "
+  >
+    <div class="cg-table" style="width: 80%;">
+      <div class="cg-table-header">
+        <div class="cg-table-title">
+          <span class="title-text">Buttons</span>
+          <span class="title-description">List of Cosmic Garden Buttons</span>
+        </div>
+        <div class="cg-table-action">
+          <!-- <a href="#" class="">Create new</a> -->
+        </div>
+      </div>
+      <table style="width: 100%;">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th style="width: 15%;">Name</th>
+            <th style="width: 20%;">Tag(s)</th>
+            <th style="width: 25%;">Class</th>
+            <th>Visual</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td style="font-weight: 600;">Default</td>
+            <td>a, button, input[submit/button]</td>
+            <td>cg-btn</td>
+            <td>
+              <a href="#" class="cg-btn">Link</a>
+              <button class="cg-btn">Button</button>
+              <input class="cg-btn mod-outline" type="submit" value="Submit">
+            </td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td style="font-weight: 600;">Primary</td>
+            <td>a, button, input[submit/button]</td>
+            <td>cg-btn cl-primary / ... mod-outline</td>
+            <td>
+              <a href="#" class="cg-btn cl-primary">Link</a>
+              <button class="cg-btn cl-primary">Button</button>
+              <input class="cg-btn cl-primary mod-outline" type="button" value="Outline">
+            </td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td style="font-weight: 600;">Secondary</td>
+            <td>a, button, input[submit/button]</td>
+            <td>cg-btn cl-secondary / ... mod-outline</td>
+            <td>
+              <a href="#" class="cg-btn cl-secondary">Link</a>
+              <button class="cg-btn cl-secondary">Button</button>
+              <input class="cg-btn cl-secondary mod-outline" type="button" value="Outline">
+            </td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td style="font-weight: 600;">Sizes</td>
+            <td>a, button, input[submit/button]</td>
+            <td>... mod-lg / ... mod-sm</td>
+            <td>
+              <a href="#" class="cg-btn mod-outline mod-lg">Large</a>
+              <button class="cg-btn cl-primary">Default</button>
+              <a href="#" class="cg-btn cl-secondary mod-sm">Small</a>
+            </td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td style="font-weight: 600;">Customizables</td>
+            <td>a, button, input[submit/button]</td>
+            <td>... cl-success / ... cl-danger / ... cl-bingus</td>
+            <td>
+              <a href="#" class="cg-btn cl-success">Success</a>
+              <button class="cg-btn cl-danger">Danger</button>
+              <a href="#" class="cg-btn cl-bingus">Bingus</a>
+            </td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td style="font-weight: 600;">Form submit</td>
+            <td>a, button, input[submit/button]</td>
+            <td>... mod-form</td>
+            <td>
+              <p>
+                <button class="cg-btn cl-primary mod-form">Submit</button>
+              </p>
+              <p>
+                <button class="cg-btn cl-secondary mod-outline mod-form">Cancel</button>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</body>
+</html>

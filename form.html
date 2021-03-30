@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Cosmic Garden CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+
+  <title>Cosmic Garden - Table</title>
+</head>
+<body>
+  <section 
+    class="section-table"
+    style="
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-top: 250px;
+      padding-bottom: 250px;
+    "
+  >
+    <div class="cg-table" style="width: 80%;">
+      <div class="cg-table-header">
+        <div class="cg-table-title">
+          <span class="title-text">Form Cards</span>
+          <span class="title-description">List of Cosmic Garden Form cards</span>
+        </div>
+        <div class="cg-table-action">
+          <!-- <a href="#" class="">Create new</a> -->
+        </div>
+      </div>
+      <table style="width: 100%;">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th style="width: 15%;">Name</th>
+            <th style="width: 10%;">Tag(s)</th>
+            <th style="width: 20%;">Class</th>
+            <th>Visual</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td style="font-weight: 600;">Default</td>
+            <td>div</td>
+            <td>cg-form</td>
+            <td>
+              <div class="cg-form">
+                <div class="form-header">
+                  <h1>Form title</h1>
+                  <h2>Form description that tells user what it is for.</h2>
+                  <hr>
+                </div>
+                <div class="form-body">
+                  <form>
+                    <div class="form-field">
+                      <!-- form content -->
+                      <div
+                        style="
+                          margin-bottom: 24px;
+                        "
+                      >
+                        <label 
+                          style="
+                            display: block;
+                            font-size: 14px;
+                            margin-bottom: 8px;
+                          ">
+                          Title
+                        </label>
+                        <input 
+                          style="
+                            width: calc(100% - 16px);
+                            line-height: 36px;
+                            border-radius: 24px;
+                            outline: none;
+                            border: 1px solid #666;
+                            padding-left: 16px;
+                          " 
+                          type="text" 
+                          placeholder="e.g. My Trip to Paradis Island">
+                      </div>
+                      <div
+                        style="
+                          margin-bottom: 24px;
+                        "
+                      >
+                        <label 
+                          style="
+                            display: block;
+                            font-size: 14px;
+                            margin-bottom: 8px;
+                          ">
+                          Content
+                        </label>
+                        <textarea
+                          style="
+                            width: 100%;
+                            height: 240px;
+                            border-radius: 24px;
+                            outline: none;
+                          "
+                        >
+
+                        </textarea>
+                      </div>
+                      <div
+                        style="
+                          margin-bottom: 24px;
+                        "
+                      >
+                        <label 
+                          style="
+                            display: block;
+                            font-size: 14px;
+                            margin-bottom: 8px;
+                          ">
+                          Tags
+                        </label>
+                        <input 
+                          style="
+                            width: calc(100% - 16px);
+                            line-height: 36px;
+                            border-radius: 24px;
+                            outline: none;
+                            border: 1px solid #666;
+                            padding-left: 16px;
+                          " 
+                          type="text"
+                          placeholder="e.g. trip, paradis, titans">
+                      </div>
+                      <!-- form content -->
+                    </div>
+                    <div class="form-action">
+                      <button class="cg-btn">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td style="font-weight: 600;">Authentication</td>
+            <td>div</td>
+            <td>cg-form mod-auth</td>
+            <td>
+              <div class="cg-form mod-auth">
+                <div class="form-header" style="text-align: center;">
+                  <img src="./img/avatar.jpg" class="cg-ava mod-md">
+                  <h1>Form title</h1>
+                  <h2>Form description that tells user what it is for.</h2>
+                  <hr>
+                </div>
+                <div class="form-body">
+                  <form>
+                    <div class="form-field">
+                      <div
+                        style="
+                          margin-bottom: 24px;
+                        "
+                      >
+                        <label 
+                          style="
+                            display: block;
+                            font-size: 14px;
+                            margin-bottom: 8px;
+                          ">
+                          Email
+                        </label>
+                        <input 
+                          style="
+                            width: calc(100% - 16px);
+                            line-height: 36px;
+                            border-radius: 24px;
+                            outline: none;
+                            border: 1px solid #666;
+                            padding-left: 16px;
+                          " 
+                          type="text" 
+                          placeholder="e.g. cosmic@garden.io">
+                      </div>
+                      <div
+                        style="
+                          margin-bottom: 24px;
+                        "
+                      >
+                        <label 
+                          style="
+                            display: block;
+                            font-size: 14px;
+                            margin-bottom: 8px;
+                          ">
+                          Password
+                        </label>
+                        <input 
+                          style="
+                            width: calc(100% - 16px);
+                            line-height: 36px;
+                            border-radius: 24px;
+                            outline: none;
+                            border: 1px solid #666;
+                            padding-left: 16px;
+                          " 
+                          type="text"
+                          placeholder="8 characters minimum">
+                      </div>
+                    </div>
+                    <div class="form-action">
+                      <button class="cg-btn mod-form">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</body>
+</html>

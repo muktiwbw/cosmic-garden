@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Cosmic Garden CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+
+  <title>Cosmic Garden - Table</title>
+</head>
+<body>
+  <section 
+    class="section-table"
+    style="
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-top: 250px;
+      padding-bottom: 250px;
+    "
+  >
+    <div class="cg-table" style="width: 80%;">
+      <div class="cg-table-header">
+        <div class="cg-table-title">
+          <span class="title-text">Images</span>
+          <span class="title-description">List of Cosmic Garden Images</span>
+        </div>
+        <div class="cg-table-action">
+          <!-- <a href="#" class="">Create new</a> -->
+        </div>
+      </div>
+      <table style="width: 100%;">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th style="width: 15%;">Name</th>
+            <th style="width: 10%;">Tag(s)</th>
+            <th style="width: 30%;">Class</th>
+            <th>Visual</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td style="font-weight: 600;">Avatar</td>
+            <td>img</td>
+            <td>cg-ava / ... mod-md / ... mod-sm / ... mod-xs</td>
+            <td>
+              <img class="cg-ava" src="./img/avatar.jpg" alt="">
+              <img class="cg-ava mod-md" src="./img/avatar.jpg" alt="">
+              <img class="cg-ava mod-sm" src="./img/avatar.jpg" alt="">
+              <img class="cg-ava mod-xs" src="./img/avatar.jpg" alt="">
+            </td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td style="font-weight: 600;">Avatar bordered</td>
+            <td>img</td>
+            <td>cg-ava mod-bordered (... cl-color)</td>
+            <td>
+              <img class="cg-ava mod-bordered cl-primary" src="./img/avatar.jpg" alt="">
+              <img class="cg-ava mod-bordered mod-md" src="./img/avatar.jpg" alt="">
+              <img class="cg-ava mod-bordered mod-sm" src="./img/avatar.jpg" alt="">
+              <img class="cg-ava mod-bordered mod-xs" src="./img/avatar.jpg" alt="">
+            </td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td style="font-weight: 600;">Avatar empty bordered</td>
+            <td>img</td>
+            <td>cg-ava mod-bordered-o (... cl-color)</td>
+            <td>
+              <img class="cg-ava mod-bordered mod-o cl-primary" src="./img/avatar.jpg" alt="">
+              <img class="cg-ava mod-bordered mod-o mod-md" src="./img/avatar.jpg" alt="">
+              <img class="cg-ava mod-bordered mod-o mod-sm" src="./img/avatar.jpg" alt="">
+              <img class="cg-ava mod-bordered mod-o mod-xs" src="./img/avatar.jpg" alt="">
+            </td>
+          </tr>
+          <tr>
+          <tr>
+            <th>4</th>
+            <td style="font-weight: 600;">Thumbnail</td>
+            <td>img</td>
+            <td>cg-thumbnail</td>
+            <td>
+              <img class="cg-thumbnail" src="./img/avatar.jpg" alt="">
+              <img class="cg-thumbnail mod-md" src="./img/avatar.jpg" alt="">
+              <img class="cg-thumbnail mod-sm" src="./img/avatar.jpg" alt="">
+              <img class="cg-thumbnail mod-xs" src="./img/avatar.jpg" alt="">
+            </td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td style="font-weight: 600;">Image highlighted / selected</td>
+            <td>div > img</td>
+            <td>.cg-highlight ic-edit/select (... mod-active) > img</td>
+            <td>
+              <div class="cg-highlight ic-edit mod-circle">
+                <img src="./img/avatar.jpg" class="cg-ava">
+              </div>
+              <div class="cg-highlight ic-edit">
+                <img src="./img/avatar.jpg" class="cg-thumbnail">
+              </div>
+              <div class="cg-highlight ic-select mod-active">
+                <img src="./img/avatar.jpg" class="cg-thumbnail mod-md">
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</body>
+</html>
