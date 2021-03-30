@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Cosmic Garden CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+
+  <title>Cosmic Garden - Carousel</title>
+</head>
+<body>
+  <section 
+    class="section-table"
+    style="
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 90px;
+      padding-bottom: 250px;
+    "
+  >
+    <div style="padding-left: 190px;">
+      <h1
+        style="
+          display: inline-block;
+          font-size: 54px;
+          font-weight: 400;
+          margin-right: 24px;
+        "
+      >Cosmic Garden</h1>
+      <h2
+        style="
+          display: inline-block;
+          font-size: 24px;
+          font-weight: 400;
+        "
+      >Quick custom & reusable HTML elements</h2>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+      <!-- Button -->
+      <div class="cg-table" style="width: 75%; margin-bottom: 36px;">
+        <div class="cg-table-header">
+          <div class="cg-table-title">
+            <span class="title-text">Buttons</span>
+            <span class="title-description">List of Cosmic Garden Buttons</span>
+          </div>
+          <div class="cg-table-action">
+            <!-- <a href="#" class="">Create new</a> -->
+          </div>
+        </div>
+        <table style="width: 100%;">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th style="width: 15%;">Name</th>
+              <th style="width: 20%;">Tag(s)</th>
+              <th style="width: 25%;">Class</th>
+              <th>Visual</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td style="font-weight: 600;">Default</td>
+              <td>a, button, input[submit/button]</td>
+              <td>cg-btn</td>
+              <td>
+                <a href="#" class="cg-btn">Link</a>
+                <button class="cg-btn">Button</button>
+                <input class="cg-btn mod-outline" type="submit" value="Submit">
+              </td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td style="font-weight: 600;">Primary</td>
+              <td>a, button, input[submit/button]</td>
+              <td>cg-btn cl-primary / ... mod-outline</td>
+              <td>
+                <a href="#" class="cg-btn cl-primary">Link</a>
+                <button class="cg-btn cl-primary">Button</button>
+                <input class="cg-btn cl-primary mod-outline" type="button" value="Outline">
+              </td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td style="font-weight: 600;">Secondary</td>
+              <td>a, button, input[submit/button]</td>
+              <td>cg-btn cl-secondary / ... mod-outline</td>
+              <td>
+                <a href="#" class="cg-btn cl-secondary">Link</a>
+                <button class="cg-btn cl-secondary">Button</button>
+                <input class="cg-btn cl-secondary mod-outline" type="button" value="Outline">
+              </td>
+            </tr>
+            <tr>
+              <th>4</th>
+              <td style="font-weight: 600;">Sizes</td>
+              <td>a, button, input[submit/button]</td>
+              <td>... mod-lg / ... mod-sm</td>
+              <td>
+                <a href="#" class="cg-btn mod-outline mod-lg">Large</a>
+                <button class="cg-btn cl-primary">Default</button>
+                <a href="#" class="cg-btn cl-secondary mod-sm">Small</a>
+              </td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td style="font-weight: 600;">Customizables</td>
+              <td>a, button, input[submit/button]</td>
+              <td>... cl-success / ... cl-danger / ... cl-bingus</td>
+              <td>
+                <a href="#" class="cg-btn cl-success">Success</a>
+                <button class="cg-btn cl-danger">Danger</button>
+                <a href="#" class="cg-btn cl-bingus">Bingus</a>
+              </td>
+            </tr>
+            <tr>
+              <th>6</th>
+              <td style="font-weight: 600;">Form submit</td>
+              <td>a, button, input[submit/button]</td>
+              <td>... mod-form</td>
+              <td>
+                <p>
+                  <button class="cg-btn cl-primary mod-form">Submit</button>
+                </p>
+                <p>
+                  <button class="cg-btn cl-secondary mod-outline mod-form">Cancel</button>
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Image -->
+      <div class="cg-table" style="width: 75%; margin-bottom: 36px;">
+        <div class="cg-table-header">
+          <div class="cg-table-title">
+            <span class="title-text">Images</span>
+            <span class="title-description">List of Cosmic Garden Images</span>
+          </div>
+          <div class="cg-table-action">
+            <!-- <a href="#" class="">Create new</a> -->
+          </div>
+        </div>
+        <table style="width: 100%;">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th style="width: 15%;">Name</th>
+              <th style="width: 10%;">Tag(s)</th>
+              <th style="width: 30%;">Class</th>
+              <th>Visual</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td style="font-weight: 600;">Avatar</td>
+              <td>img</td>
+              <td>cg-ava / ... mod-md / ... mod-sm / ... mod-xs</td>
+              <td>
+                <img class="cg-ava" src="./img/avatar.jpg" alt="">
+                <img class="cg-ava mod-md" src="./img/avatar.jpg" alt="">
+                <img class="cg-ava mod-sm" src="./img/avatar.jpg" alt="">
+                <img class="cg-ava mod-xs" src="./img/avatar.jpg" alt="">
+              </td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td style="font-weight: 600;">Avatar bordered</td>
+              <td>img</td>
+              <td>cg-ava mod-bordered (... cl-color)</td>
+              <td>
+                <img class="cg-ava mod-bordered cl-primary" src="./img/avatar.jpg" alt="">
+                <img class="cg-ava mod-bordered mod-md" src="./img/avatar.jpg" alt="">
+                <img class="cg-ava mod-bordered mod-sm" src="./img/avatar.jpg" alt="">
+                <img class="cg-ava mod-bordered mod-xs" src="./img/avatar.jpg" alt="">
+              </td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td style="font-weight: 600;">Avatar empty bordered</td>
+              <td>img</td>
+              <td>cg-ava mod-bordered-o (... cl-color)</td>
+              <td>
+                <img class="cg-ava mod-bordered mod-o cl-primary" src="./img/avatar.jpg" alt="">
+                <img class="cg-ava mod-bordered mod-o mod-md" src="./img/avatar.jpg" alt="">
+                <img class="cg-ava mod-bordered mod-o mod-sm" src="./img/avatar.jpg" alt="">
+                <img class="cg-ava mod-bordered mod-o mod-xs" src="./img/avatar.jpg" alt="">
+              </td>
+            </tr>
+            <tr>
+            <tr>
+              <th>4</th>
+              <td style="font-weight: 600;">Thumbnail</td>
+              <td>img</td>
+              <td>cg-thumbnail</td>
+              <td>
+                <img class="cg-thumbnail" src="./img/avatar.jpg" alt="">
+                <img class="cg-thumbnail mod-md" src="./img/avatar.jpg" alt="">
+                <img class="cg-thumbnail mod-sm" src="./img/avatar.jpg" alt="">
+                <img class="cg-thumbnail mod-xs" src="./img/avatar.jpg" alt="">
+              </td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td style="font-weight: 600;">Image highlighted / selected</td>
+              <td>div > img</td>
+              <td>.cg-highlight ic-edit/select (... mod-active) > img</td>
+              <td>
+                <div class="cg-highlight ic-edit mod-circle">
+                  <img src="./img/avatar.jpg" class="cg-ava">
+                </div>
+                <div class="cg-highlight ic-edit">
+                  <img src="./img/avatar.jpg" class="cg-thumbnail">
+                </div>
+                <div class="cg-highlight ic-select mod-active">
+                  <img src="./img/avatar.jpg" class="cg-thumbnail mod-md">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Table -->
+      <div class="cg-table" style="width: 75%; margin-bottom: 36px;">
+        <div class="cg-table-header">
+          <div class="cg-table-title">
+            <span class="title-text">Table</span>
+            <span class="title-description">Table example from Cosmic Garden</span>
+          </div>
+          <div class="cg-table-action">
+            <a href="#" class="cg-btn primary">Create new</a>
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th style="width: 20%;">Created at</th>
+              <th style="width: 30%;">Project name</th>
+              <th>Highlight</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td style="font-weight: 600;">24 Mar 2021</td>
+              <td style="font-weight: 600;">Worldwide Uno Championship</td>
+              <td>Modi earum cumque animi velit assumenda laudantium magni nesciunt eum.</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td style="font-weight: 600;">26 Mar 2021</td>
+              <td style="font-weight: 600;">Help Us Restore The Elidan Empire</td>
+              <td>Pariatur fugiat ut in expedita voluptas quisquam? Repellendus.</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td style="font-weight: 600;">14 Apr 2021</td>
+              <td style="font-weight: 600;">The Mechanical Leg</td>
+              <td>Officia assumenda ipsam ducimus facere quo!</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Form -->
+      <div class="cg-table" style="width: 75%; margin-bottom: 36px;">
+        <div class="cg-table-header">
+          <div class="cg-table-title">
+            <span class="title-text">Form Cards</span>
+            <span class="title-description">List of Cosmic Garden Form cards</span>
+          </div>
+          <div class="cg-table-action">
+            <!-- <a href="#" class="">Create new</a> -->
+          </div>
+        </div>
+        <table style="width: 100%;">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th style="width: 15%;">Name</th>
+              <th style="width: 10%;">Tag(s)</th>
+              <th style="width: 20%;">Class</th>
+              <th>Visual</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td style="font-weight: 600;">Default</td>
+              <td>div</td>
+              <td>cg-form</td>
+              <td>
+                <div class="cg-form">
+                  <div class="form-header">
+                    <h1>Form title</h1>
+                    <h2>Form description that tells user what it is for.</h2>
+                    <hr>
+                  </div>
+                  <div class="form-body">
+                    <form>
+                      <div class="form-field">
+                        <!-- form content -->
+                        <div
+                          style="
+                            margin-bottom: 24px;
+                          "
+                        >
+                          <label 
+                            style="
+                              display: block;
+                              font-size: 14px;
+                              margin-bottom: 8px;
+                            ">
+                            Title
+                          </label>
+                          <input 
+                            style="
+                              width: calc(100% - 16px);
+                              line-height: 36px;
+                              border-radius: 24px;
+                              outline: none;
+                              border: 1px solid #666;
+                              padding-left: 16px;
+                            " 
+                            type="text" 
+                            placeholder="e.g. My Trip to Paradis Island">
+                        </div>
+                        <div
+                          style="
+                            margin-bottom: 24px;
+                          "
+                        >
+                          <label 
+                            style="
+                              display: block;
+                              font-size: 14px;
+                              margin-bottom: 8px;
+                            ">
+                            Content
+                          </label>
+                          <textarea
+                            style="
+                              width: 100%;
+                              height: 240px;
+                              border-radius: 24px;
+                              outline: none;
+                            "
+                          >
+  
+                          </textarea>
+                        </div>
+                        <div
+                          style="
+                            margin-bottom: 24px;
+                          "
+                        >
+                          <label 
+                            style="
+                              display: block;
+                              font-size: 14px;
+                              margin-bottom: 8px;
+                            ">
+                            Tags
+                          </label>
+                          <input 
+                            style="
+                              width: calc(100% - 16px);
+                              line-height: 36px;
+                              border-radius: 24px;
+                              outline: none;
+                              border: 1px solid #666;
+                              padding-left: 16px;
+                            " 
+                            type="text"
+                            placeholder="e.g. trip, paradis, titans">
+                        </div>
+                        <!-- form content -->
+                      </div>
+                      <div class="form-action">
+                        <button class="cg-btn">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td style="font-weight: 600;">Authentication</td>
+              <td>div</td>
+              <td>cg-form mod-auth</td>
+              <td>
+                <div class="cg-form mod-auth">
+                  <div class="form-header" style="text-align: center;">
+                    <img src="./img/avatar.jpg" class="cg-ava mod-md">
+                    <h1>Form title</h1>
+                    <h2>Form description that tells user what it is for.</h2>
+                    <hr>
+                  </div>
+                  <div class="form-body">
+                    <form>
+                      <div class="form-field">
+                        <div
+                          style="
+                            margin-bottom: 24px;
+                          "
+                        >
+                          <label 
+                            style="
+                              display: block;
+                              font-size: 14px;
+                              margin-bottom: 8px;
+                            ">
+                            Email
+                          </label>
+                          <input 
+                            style="
+                              width: calc(100% - 16px);
+                              line-height: 36px;
+                              border-radius: 24px;
+                              outline: none;
+                              border: 1px solid #666;
+                              padding-left: 16px;
+                            " 
+                            type="text" 
+                            placeholder="e.g. cosmic@garden.io">
+                        </div>
+                        <div
+                          style="
+                            margin-bottom: 24px;
+                          "
+                        >
+                          <label 
+                            style="
+                              display: block;
+                              font-size: 14px;
+                              margin-bottom: 8px;
+                            ">
+                            Password
+                          </label>
+                          <input 
+                            style="
+                              width: calc(100% - 16px);
+                              line-height: 36px;
+                              border-radius: 24px;
+                              outline: none;
+                              border: 1px solid #666;
+                              padding-left: 16px;
+                            " 
+                            type="text"
+                            placeholder="8 characters minimum">
+                        </div>
+                      </div>
+                      <div class="form-action">
+                        <button class="cg-btn mod-form">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Carousel -->
+      <div class="cg-table" style="width: 75%; margin-bottom: 36px;">
+        <div class="cg-table-header">
+          <div class="cg-table-title">
+            <span class="title-text">Carousels</span>
+            <span class="title-description">List of Cosmic Garden Carousels</span>
+          </div>
+          <div class="cg-table-action">
+            <!-- <a href="#" class="">Create new</a> -->
+          </div>
+        </div>
+        <table style="width: 100%;">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th style="width: 15%;">Name</th>
+              <th style="width: 10%;">Tag(s)</th>
+              <th style="width: 20%;">Class</th>
+              <th>Visual</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td style="font-weight: 600;">Default</td>
+              <td>div</td>
+              <td>cg-carousel</td>
+              <td>
+                <!-- Here -->
+                <div class="cg-carousel">
+                  <div class="carousel-display">
+                    <img src="./img/project-image.jpg" alt="">
+                  </div>
+                  <div class="carousel-thumbnail-wrapper">
+                    <div class="carousel-thumbnail">
+                      <img src="./img/project-slider-1.jpg" alt="">
+                    </div>
+                    <div class="carousel-thumbnail mod-active">
+                      <img src="./img/project-slider-2.jpg" alt="">
+                    </div>
+                    <div class="carousel-thumbnail">
+                      <img src="./img/project-slider-3.jpg" alt="">
+                    </div>
+                    <div class="carousel-thumbnail">
+                      <img src="./img/project-slider-4.jpg" alt="">
+                    </div>
+                    <div class="carousel-thumbnail">
+                      <img src="./img/project-slider-4.jpg" alt="">
+                    </div>
+                    <div class="carousel-thumbnail">
+                      <img src="./img/project-slider-4.jpg" alt="">
+                    </div>
+                    <div class="carousel-thumbnail">
+                      <img src="./img/project-slider-4.jpg" alt="">
+                    </div>
+                    <div class="carousel-thumbnail">
+                      <img src="./img/project-slider-4.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

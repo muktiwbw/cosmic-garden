@@ -34,7 +34,7 @@
   --ic-edit: url("./../img/pencil.svg");
 
   /* Carousel */
-  --crl-display-max-height: 420px
+  --crl-display-max-height: 420px;
 
   --box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
 
@@ -510,8 +510,8 @@ button.cg-btn:focus, input[type="submit"].cg-btn:focus, input[type="button"].cg-
 /*? Default  */
 .cg-carousel {
   width: 100%;
-  min-height: 200px; /** delete soon */
-  background-color: slateblue; /** delete soon */ 
+  min-height: 200px; /** delete in usage */
+  background-color: slateblue; /** delete in usage */
   padding: 12px;
 }
 
