@@ -530,7 +530,7 @@ button.cg-btn:focus, input[type="submit"].cg-btn:focus, input[type="button"].cg-
 
 .cg-carousel > .carousel-thumbnail-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 20%)); /** play around with the max value to fit the display width (or not) */
   column-gap: 8px;
 }
 
@@ -540,6 +540,7 @@ button.cg-btn:focus, input[type="submit"].cg-btn:focus, input[type="button"].cg-
   width: fit-content;
   cursor: pointer;
   position: relative;
+  margin-bottom: 8px;
 }
 
 .cg-carousel > .carousel-thumbnail-wrapper > .carousel-thumbnail:after {
@@ -547,9 +548,9 @@ button.cg-btn:focus, input[type="submit"].cg-btn:focus, input[type="button"].cg-
   display: block;
   position: absolute; /* set position to absolute, don't forget to set parent elem to relative */
   top: 0; bottom: 0; left: 0; right: 0; /* strecth each end to 0 to fill out the space */
-  height: calc(100% - 7px);
+  /* height: calc(100% - 7px); */
   background: url("./../img/check.svg"), var(--cl-highlight);
-  background-size: 40%;
+  background-size: 30%;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: var(--border-radius-xs);
@@ -563,7 +564,7 @@ button.cg-btn:focus, input[type="submit"].cg-btn:focus, input[type="button"].cg-
 .cg-carousel > .carousel-thumbnail-wrapper > .carousel-thumbnail.mod-active:after {
   opacity: 100%;
   background: url("./../img/check.svg"), var(--cl-highlight-active);
-  background-size: 40%;
+  background-size: 30%;
   background-repeat: no-repeat;
   background-position: center;
 }
