@@ -530,8 +530,10 @@ button.cg-btn:focus, input[type="submit"].cg-btn:focus, input[type="button"].cg-
 
 .cg-carousel > .carousel-thumbnail-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 20%)); /** play around with the max value to fit the display width (or not) */
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   column-gap: 8px;
+  width: fit-content; /** the width fits its content... */
+  max-width: 100%; /** ...but can only grow not more than 100% of its parent's */
 }
 
 .cg-carousel > .carousel-thumbnail-wrapper > .carousel-thumbnail {
@@ -541,14 +543,14 @@ button.cg-btn:focus, input[type="submit"].cg-btn:focus, input[type="button"].cg-
   cursor: pointer;
   position: relative;
   margin-bottom: 8px;
+  max-width: 200px; /** each thumbnail has maximum 200px width */
 }
 
 .cg-carousel > .carousel-thumbnail-wrapper > .carousel-thumbnail:after {
   content: "";
   display: block;
-  position: absolute; /* set position to absolute, don't forget to set parent elem to relative */
-  top: 0; bottom: 0; left: 0; right: 0; /* strecth each end to 0 to fill out the space */
-  /* height: calc(100% - 7px); */
+  position: absolute; /** set position to absolute, don't forget to set parent elem to relative */
+  top: 0; bottom: 0; left: 0; right: 0; /** strecth each end to 0 to fill out the space */
   background: url("./../img/check.svg"), var(--cl-highlight);
   background-size: 30%;
   background-repeat: no-repeat;
