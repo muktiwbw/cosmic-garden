@@ -532,7 +532,7 @@ button.cg-btn:focus, input[type="submit"].cg-btn:focus, input[type="button"].cg-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   column-gap: 8px;
-  width: fit-content; /** the width fits its content... */
+  min-width: fit-content; /** the width fits its content... */
   max-width: 100%; /** ...but can only grow not more than 100% of its parent's */
 }
 
